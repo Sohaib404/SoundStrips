@@ -46,7 +46,7 @@ The SoundStrips application uses the tkinter GUI system to make interfacing easi
 
 
 
-![SoundStrips GUI](SoundStrips GUI.JPG) ![SoundStrips GUI2](SoundStrips GUI2.JPG)
+![SoundStrips GUI](https://github.com/Sohaib404/SoundStrips/blob/master/SoundStrips%20GUI.JPG?raw=true) ![SoundStrips GUI2](https://github.com/Sohaib404/SoundStrips/blob/master/SoundStrips%20GUI2.JPG?raw=true)
 
 ### Power
 The Power Button can turn on and off the lights. The power will automatically be turned off when a new audio device is selected and will have to be turned on again manually. Make sure to turn the power off before exiting the application so the serialport closes and is not left opened.
