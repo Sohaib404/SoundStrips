@@ -34,7 +34,7 @@ Since the Arduino saves and runs the most recent uploaded script on startup, thi
 
 ### Computer (Server)
 
-1. First, navigate to the "Sound Control Panel" in your "Sound Settings". Under "Recording", enable the "Stereo Mix" device.
+1. First, navigate to the "Sound Control Panel" in your "Sound Settings". Under "Recording", enable the "Stereo Mix" device. If "Stereo Mix" isn't visible, right click in the menu and check show disabled and disconnected devices. If that still does nto work, see troubleshooting.
 
 2. The python file has already been built and can be directly run as an application. Start up the application in the App Build folder.
 
@@ -79,6 +79,8 @@ The "Reset all Settings" button will reset the application to the default preset
 
 ## Troubleshooting
 
+ Some laptop manufacturers, Surfaces for example, have made the Stereo Mix audio device inaccessible. To work around this and use audio outputted from applications, install [voicemeeter](https://www.vb-audio.com/Voicemeeter/). After installing and restarting your computer, start up Voicemeeter and select WDM: Speakers as HARDWARE OUT. Voicemeeter should now come up in the audio device selection menu in Soundstrips. Tested on Surface Go.
+ 
  The application "SoundStrips-Server" must always have the "images" folder, LICENSE.txt, and README.md in the same directory for the application to start.
 
  Although this project calls for addressable LED light strips, it is possible to get this working for any light or component that can be interfaced using an Arduino by altering the code in the arduino file.
