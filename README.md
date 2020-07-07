@@ -23,20 +23,26 @@ Each LED on a strip uses about 50mA when set to full brightness so make sure to 
 ### Arduino (Client)
 Since the Arduino saves and runs the most recent uploaded script on startup, this code will only need be uploaded to the Arduino once.
 
-1.  Make sure your Arduino is using serialport COM3. (If you are unable to do so, change which serialport you are writing to in the python file. See Troubleshooting)
+1. Go to [Arduino.cc](https://www.arduino.cc/en/main/software) and download the Arduino IDE.
 
-2. Run and Upload "SoundStrips-Client" on your Arduino.
+2. After installation, go to Tools -> board and Processor, and select the Arduino board and Processor you have.
+
+3. Next, go to Sketch -> Libraries -> Manage Libraries, and search for FastLED. Install the latest version.
+
+4. Upload the sketch onto your Arduino and choose COM3 as your serialport. (If you are unable to do so, change which serialport SoundStrips writes to in the python file. See Troubleshooting)
+
 
 ### Computer (Server)
-The python file has already been built and can be directly run as an application.
 
 1. First, navigate to the "Sound Control Panel" in your "Sound Settings". Under "Recording", enable the "Stereo Mix" device.
 
-2. The python file has already been built and can be directly run as an application. Start up the application in the App Build folder, click the gear icon and refresh the device list to display all the current recording devices on your computer. For general audio outputted through applications, click "Stereo Mix" and push select.
+2. The python file has already been built and can be directly run as an application. Start up the application in the App Build folder.
 
-3. Go back to the main menu by clicking the menu icon and customize how your lights will react to the sound. (See next section)
+3. Click the gear icon and refresh the device list to display all the current recording devices on your computer. For general audio outputted through applications, click "Stereo Mix" and push select.
 
-4. Click the power button to start.
+4. Go back to the main menu by clicking the menu icon and customize how your lights will react to the sound. (See next section)
+
+5. Click the power button to start.
 
  If need be, you can tweak the python file for troubleshooting or customization and rebuild the application. (See Troubleshooting)
 
@@ -44,8 +50,6 @@ The python file has already been built and can be directly run as an application
 ## Using the SoundStrips App
 
 The SoundStrips application uses the tkinter GUI system to make interfacing easier.
-
-
 
 ![SoundStrips GUI](https://github.com/Sohaib404/SoundStrips/blob/master/SoundStrips%20GUI.JPG?raw=true) ![SoundStrips GUI2](https://github.com/Sohaib404/SoundStrips/blob/master/SoundStrips%20GUI2.JPG?raw=true)
 
