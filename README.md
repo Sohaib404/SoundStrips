@@ -36,7 +36,7 @@ Since the Arduino saves and runs the most recent uploaded script on startup, thi
 
 1. First, navigate to the "Sound Control Panel" in your "Sound Settings". Under "Recording", enable the "Stereo Mix" device. If "Stereo Mix" isn't visible, right click in the menu and check show disabled and disconnected devices. If that still does not work, see troubleshooting.
 
-2. The python file has already been built and can be directly run as an application. Start up the application in the App Build folder.
+2. The python file has already been built and can be directly run as an application. Start up the application in the App Build folder. The Arduino must be connected with the sketch uploaded for the application to start.
 
 3. Click the gear icon and refresh the device list to display all the current recording devices on your computer. For general audio outputted through applications, click "Stereo Mix" and push select.
 
