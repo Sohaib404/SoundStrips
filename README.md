@@ -21,21 +21,22 @@ Each LED on a strip uses about 50mA when set to full brightness so make sure to 
 ## Installation
 
 ### Arduino (Client)
-Since the Arduino saves and runs the most recent uploaded script on startup. This code will only need be uploaded to the Arduino once:
+Since the Arduino saves and runs the most recent uploaded script on startup, this code will only need be uploaded to the Arduino once.
 
-1.  Make sure your Arduino is using serialport COM3.
+1.  Make sure your Arduino is using serialport COM3. (If you are unable to do so, change which serialport you are writing to in the python file. See Troubleshooting)
 
 2. Run and Upload "SoundStrips-Client" on your Arduino.
 
 ### Computer (Server)
 The python file has already been built and can be directly run as an application.
 
-1. Navigate to the "Sound Control Panel" in your "Sound Settings". Under "Recording", enable the "Stereo Mix" device.
+1. First, navigate to the "Sound Control Panel" in your "Sound Settings". Under "Recording", enable the "Stereo Mix" device.
 
-2. Start up the application, click the gear icon and refresh the device list to display all the current recording devices on your computer. For general audio outputted through applications, click "Stereo Mix" and push select.
+2. The python file has already been built and can be directly run as an application. Start up the application in the App Build folder, click the gear icon and refresh the device list to display all the current recording devices on your computer. For general audio outputted through applications, click "Stereo Mix" and push select.
 
-3. Go back to the main menu by hitting the menu icon, and customize how your lights will react to the sound.
-4. Hit the power button to start the light show.
+3. Go back to the main menu by clicking the menu icon and customize how your lights will react to the sound. (See next section)
+
+4. Click the power button to start.
 
  If need be, you can tweak the python file for troubleshooting or customization and rebuild the application. (See Troubleshooting)
 
@@ -62,7 +63,7 @@ The customize menu is used to change how the lights react.
 - The color button sets the color of the lights.
   
 - Using the save button will save all the above settings into a preset. Presets are case sensitive and cannot have the same name.
-- Press the upload button to send the current set values to the Arduino. You must hit upload for the changes to take place.
+- Press the upload button to send the current set values to the Arduino. You must hit upload for changes to be sent to the arduino and take place.
 
 ### Live Feed
  The live feed can be paused and played and will show the current audio devices volume output. Use this to help set the volume threshold. The live feed will sometimes show in the top left of fullscreen games and applications to help you determine a good volume threshold aswell (experimental).
@@ -83,6 +84,7 @@ The "Reset all Settings" button will reset the application to the default preset
 ```bash
 pyinstaller.exe --onefile --windowed --icon.ico=images\icon.ico SoundStrips-Server.py
 ```
+**Make sure to copy the the "images" folder, LICENSE.txt, and README.txt to the same directory as the newly built application after building.**
 
 For other issues or help, feel free to [email me](mailto:sohaibx@live.ca).
 
