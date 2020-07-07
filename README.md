@@ -75,7 +75,7 @@ The "Reset all Settings" button will reset the application to the default preset
 
 ## Troubleshooting
 
- The application "SoundStrips-Server" must always have the "images" folder, LICENSE.txt, and README.txt in the same directory for the application to start.
+ The application "SoundStrips-Server" must always have the "images" folder, LICENSE.txt, and README.md in the same directory for the application to start.
 
  Although this project calls for addressable LED light strips, it is possible to get this working for any light or component that can be interfaced using an Arduino by altering the code in the arduino file.
 
@@ -84,7 +84,7 @@ The "Reset all Settings" button will reset the application to the default preset
 ```bash
 pyinstaller.exe --onefile --windowed --icon.ico=images\icon.ico SoundStrips-Server.py
 ```
-**Make sure to copy the the "images" folder, LICENSE.txt, and README.txt to the same directory as the newly built application after building.**
+**Make sure to copy the the "images" folder, LICENSE.txt, and README.md to the same directory as the newly built application after building.**
 
 For other issues or help, feel free to [email me](mailto:sohaibx@live.ca).
 
