@@ -2,6 +2,10 @@
 
 SoundStrips is a personal project made by me (Sohaib Khadri) to control LED light strips using the Audio outputting from a computer. Using pyaudio and serial, SoundStrips processes audio outputting from any audio device on your computer in **realtime** to control your LED light strips so that you can sync them with movies, video games, music, microphones, and more! This project was made and tested using Windows 10, python 3.8, a ws2812b 150 LED addressable light strip, and an Arduino MEGA 2560.
 
+[Reddit Video Link]()
+
+![SoundStrips GIF](https://github.com/Sohaib404/SoundStrips/blob/master/SoundStrips%20GIF.gif?raw=true)
+
 ## Wiring Instructions
  This project was made to minimize hardware audio processing and find a way to directly control the lights in a simple yet efficient way using software-side audio processing in python. Due to this approach, the only required parts are:
 
