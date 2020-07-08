@@ -94,7 +94,7 @@ The "Reset all Settings" button will reset the application to the default preset
 ```bash
 pyinstaller.exe --onefile --windowed --icon.ico=images\icon.ico SoundStrips-Server.py
 ```
-** The built application will be in the "dist" folder and can be moved from there. Make sure to copy the "images" folder, LICENSE.txt, and README.md to the same directory as the newly built application after building.**
+**The built application will be in the "dist" folder and can be moved from there. Make sure to copy the "images" folder, LICENSE.txt, and README.md to the same directory as the newly built application after building.**
 
 For other issues or help, feel free to [email me](mailto:sohaibx@live.ca).
 
