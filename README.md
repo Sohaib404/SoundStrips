@@ -36,7 +36,7 @@ Since the Arduino saves and runs the most recent uploaded script on startup, thi
 
 1. First, navigate to the "Sound Control Panel" in your "Sound Settings". Under "Recording", enable the "Stereo Mix" device. If "Stereo Mix" isn't visible, right click in the menu and check show disabled and disconnected devices. If that still does not work, see troubleshooting.
 
-2. The python file has already been built and can be directly run as an application. Start up the application in the App Build folder. The Arduino must be connected with the sketch uploaded for the application to start.
+2. The python file has already been built and can be directly run as an application. Unzip and start up the application in the App Build folder. The Arduino must be connected with the sketch uploaded for the application to start.
 
 3. Click the gear icon and refresh the device list to display all the current recording devices on your computer. For general audio outputted through applications, click "Stereo Mix" and push select.
 
@@ -61,7 +61,7 @@ Presets you've made can be chosen from the dropdown and loaded in using the load
 
 ### Customize
 The customize menu is used to change how the lights react.
-- The volume threshold sets the bar that the current volume has to reach to turn on the lights. This setting, unlike the rest, works in realtime and does not need to be uploaded to the Arduino for changes to take effect. Using the live feed can help you decide what value to set this at.
+- The volume thresholds sets the minimum and maximum level that the current volume has to reach to turn on the lights. These settings, unlike the rest, works in realtime and does not need to be uploaded to the Arduino for changes to take effect. Using the live feed can help you decide what values to set these at.
 - The brightness slider is very self explanatory. 
 - The fade speed slider sets how fast the lights fade out after being turned on.
 - The color button sets the color of the lights.
